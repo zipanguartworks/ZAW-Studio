@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZAW Studio</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+ZAW
+</div>
+
+<div class="subtitle">
+Studio
+</div>
+
+<div class="menu">
+
+<div class="button">
+📦 New Listing
+</div>
+
+<div class="button">
+⚙️ Settings
+</div>
+
+<div class="button">
+ℹ️ About
+</div>
+
+</div>
+
+<div class="footer">
+
+ZipanguArtworks Creator Suite
+
+<br><br>
+
+v3.0.0-alpha
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+
+if ("serviceWorker" in navigator) {
+window.addEventListener("load", () => {
+navigator.serviceWorker.register("./service-worker.js");
+});
+}
+
+</script>
+
+</body>
+
+</html>
